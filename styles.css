@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#clockContainer {
+    margin-top: 20px;
+}
+
+.clock {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+/* Clock Designs - Digital */
+
+/* Simple Design */
+.simple {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Bold Design */
+.bold {
+    font-family: 'Arial Black', sans-serif;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Neon Design */
+.neon {
+    font-family: 'Verdana', sans-serif;
+    color: #39FF14;
+    text-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Analog Clock Styles */
+
+/* Base Styles for Analog Clock */
+#analogClock {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+}
+
+/* Classic Design */
+.classic {
+    border: 8px solid black;
+    border-radius: 50%;
+    background: white;
+}
+
+.classic .hand {
+    background: black;
+}
+
+.classic .second-hand {
+    background: red;
+}
+
+/* Modern Design */
+.modern {
+    border: 4px solid #3498db;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #2c3e50, #bdc3c7);
+}
+
+.modern .hand {
+    background: white;
+}
+
+.modern .second-hand {
+    background: #e74c3c;
+}
+
+/* Minimalist Design */
+.minimalist {
+    border: 2px solid #2ecc71;
+    border-radius: 50%;
+    background: transparent;
+}
+
+.minimalist .hand {
+    background: #2ecc71;
+}
+
+.minimalist .second-hand {
+    background: #27ae60;
+}
+
+/* Futuristic Design */
+.futuristic {
+    border: 5px solid #8e44ad;
+    background: radial-gradient(circle, #1abc9c, #2c3e50);
+}
+
+.futuristic .hand {
+    background: #ecf0f1;
+}
+
+.futuristic .second-hand {
+    background: #9b59b6;
+}
+
+/* Common Hand Styles */
+.hand {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+    height: 6px;
+}
+
+.min-hand {
+    height: 4px;
+}
+
+.second-hand {
+    height: 2px;
+}
+
+/* Button Styles */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
